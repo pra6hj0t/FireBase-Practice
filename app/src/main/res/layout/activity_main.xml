@@ -40,6 +40,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_fullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -57,6 +58,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -78,6 +80,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="Email"
+            android:id="@+id/et_email"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:id="@+id/et_password"
             android:inputType="textPassword"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -114,18 +118,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Retype Password"
+            android:id="@+id/et_retypePassword"
             android:inputType="textPassword"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/male_Box"
             android:layout_marginRight="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +139,7 @@
             android:text="Male" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/female_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -141,6 +147,7 @@
     </RadioGroup>
 
     <android.widget.Button
+        android:id="@+id/btn_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -166,6 +173,7 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="   Login Now"
+           android:id="@+id/text_loginNow"
            android:textColor="#3949AB"/>
    </LinearLayout>
 </LinearLayout>
