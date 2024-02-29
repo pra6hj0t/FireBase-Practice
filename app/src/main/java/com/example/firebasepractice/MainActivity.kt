@@ -1,5 +1,6 @@
 package com.example.firebasepractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -70,6 +71,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Select Gender",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            if(!Password.equals(RetypePassword)){
+                retypePassword.setError("Not Matched")
+                return@setOnClickListener
+            }
 
 
             val users = Users(FullName,UserName,Email,Password,gender)
@@ -87,6 +92,11 @@ class MainActivity : AppCompatActivity() {
             }
 
 
+        }
+
+        loginNow.setOnClickListener {
+            intent= Intent(this,SignInActivity::class.java)
+            startActivity(intent)
         }
     }
 }
